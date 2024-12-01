@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book</title>
+  <style>
+    /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #ff6f61;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* Recipe List Styles */
+.recipe-list {
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.recipe-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-list li {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.recipe-list li:hover {
+  background-color: #ffecd1;
+}
+
+/* Recipe Details Styles */
+.recipe-details {
+  flex-grow: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#recipe-content {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+  </style>
+   
+</head>
+<body>
+  <header>
+    <h1>Delicious Recipies🍕🍔🍣</h1>
+  </header>
+
+  <main>
+    <section class="recipe-list">
+      <h2>Recipes</h2>
+      <ul>
+        <li onclick="showRecipe('pancakes')">Pancakes</li>
+        <li onclick="showRecipe('pasta')">Creamy Pasta</li>
+        <li onclick="showRecipe('salad')">Greek Salad</li>
+      </ul>
+    </section>
+
+    <section class="recipe-details">
+      <h2>Recipe Details</h2>
+      <div id="recipe-content">
+        <p>Select a recipe to view details!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Recipe Book</p>
+  </footer>
+  <script>
+    // Recipe data
+const recipes = {
+  pancakes: {
+    title: "Fluffy Pancakes",
+    ingredients: [
+      "1 cup flour",
+      "2 tablespoons sugar",
+      "1 teaspoon baking powder",
+      "1 cup milk",
+      "1 egg",
+      "2 tablespoons melted butter"
+    ],
+    steps: [
+      "In a bowl, mix flour, sugar, and baking powder.",
+      "Whisk in milk, egg, and melted butter until smooth.",
+      "Heat a non-stick pan and pour 1/4 cup of batter.",
+      "Cook until bubbles appear, then flip and cook the other side.",
+      "Serve with syrup or toppings of your choice!"
+    ]
+  },
+  pasta: {
+    title: "Creamy Pasta",
+    ingredients: [
+      "200g pasta",
+      "1 cup heavy cream",
+      "2 cloves garlic (minced)",
+      "1/4 cup grated Parmesan cheese",
+      "Salt and pepper to taste",
+      "Fresh parsley (chopped)"
+    ],
+    steps: [
+      "Boil pasta according to package instructions.",
+      "In a pan, sauté garlic in olive oil until fragrant.",
+      "Add heavy cream and simmer for 2 minutes.",
+      "Stir in Parmesan cheese, salt, and pepper.",
+      "Toss pasta in the sauce and garnish with parsley."
+    ]
+  },
+  salad: {
+    title: "Greek Salad",
+    ingredients: [
+      "2 cups chopped lettuce",
+      "1 cucumber (diced)",
+      "1 tomato (diced)",
+      "1/4 cup sliced olives",
+      "1/4 cup feta cheese (crumbled)",
+      "Olive oil and lemon juice for dressing"
+    ],
+    steps: [
+      "Combine lettuce, cucumber, tomato, and olives in a bowl.",
+      "Drizzle with olive oil and lemon juice.",
+      "Sprinkle feta cheese on top and serve fresh."
+    ]
+  }
+};
+
+// Function to display recipe details
+function showRecipe(recipeKey) {
+  const recipe = recipes[recipeKey];
+  const recipeContent = document.getElementById("recipe-content");
+
+  recipeContent.innerHTML = `
+    <h3>${recipe.title}</h3>
+    <h4>Ingredients:</h4>
+    <ul>${recipe.ingredients.map(item => `<li>${item}</li>`).join("")}</ul>
+    <h4>Steps:</h4>
+    <ol>${recipe.steps.map(step => `<li>${step}</li>`).join("")}</ol>
+  `;
+}
+
+  </script>
+
+ 
+</body>
+</html>

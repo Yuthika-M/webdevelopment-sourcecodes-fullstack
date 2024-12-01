@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="player">
+        <h1 id="songTitle">SONGS</h1>
+        <iframe id="song1" width="100%" height="380" frameborder="0" 
+        src="https://open.spotify.com/embed/track/3j9rx6Vt7kYmmpQtzCg5Hg?utm_source=generator" allow="encrypted-media">
+        </iframe>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+    </div>
+    <div class="player1">
+        <h1 id="Songtitle1">SONGS</h1>
+        <iframe id="song2" src="https://embed.music.apple.com/us/album/dynamite/1537279283?i=1537279291" width="100%" height="380" frameborder="0" allow="encrypted-media"></iframe>
+        <button id="play1">Play</button>
+        <button id="play2">Pause</button>
+
+    </div>
+    <script>
+         
+         
+        document.getElementById("play").onclick = function(){
+            alert("spotify controls the playbacck directly");
+        };
+        document.getElementById("pause").onclick = function(){
+            alert("Spotify controls the playback buton directly");
+        };
+        document.getElementById("play1").onclick = function(){
+            alert("Gaana controls the playback button directly");
+        }
+        document.getElementById("play2").onclick = function(){
+            alert("Gaana controls the plackback button directly");
+        }
+    
+    </script>
+     
+    
+</body>
+</html>

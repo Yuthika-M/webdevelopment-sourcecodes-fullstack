@@ -1,0 +1,90 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5500/Ourweb.html
+Subject: yuthi web
+Date: Wed, 6 Nov 2024 19:17:48 +0400
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--aAksUu79zEfg0ALTnKjE6STlCUcrNwZ6I3clQGrOz0----"
+
+
+------MultipartBoundary--aAksUu79zEfg0ALTnKjE6STlCUcrNwZ6I3clQGrOz0----
+Content-Type: text/html
+Content-ID: <frame-B74ADD23E8CC6F6F73DED03A7D04696E@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/Ourweb.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-6118c7ac-bbe7-418b-aa7c-a8ebbb1319b8@mhtml.blink" />
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>yuthi web</title>
+   =20
+ </head>
+ <body>
+    <div class=3D"main1">
+        <h1>Login Form</h1>
+        <form>
+            <t table=3D"">
+           =20
+            =20
+            =20
+       =20
+
+   =20
+   =20
+ <!-- Code injected by live-server -->
+
+
+ </t><table id=3D"form">
+                <tbody><tr>
+                    <td>
+                        <label for=3D"na">NAME</label>
+                    </td>
+                    <td>
+                        <input type=3D"text" id=3D"na">
+                    </td>
+                </tr>
+                <tr>=20
+                    <td>
+                        <label for=3D"nu">NUMBER</label>
+                    </td>
+                    <td>
+                        <input type=3D"number " id=3D"nu">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for=3D"em">EMAIL</label>
+                    </td>
+                    <td>
+                        <input type=3D"email" id=3D"em">
+                    </td>
+                    =20
+                </tr>
+                <tr><td>
+                    <input type=3D"submit">=20
+                </td>
+
+            </tr></tbody></table></form></div></body></html>
+------MultipartBoundary--aAksUu79zEfg0ALTnKjE6STlCUcrNwZ6I3clQGrOz0----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-6118c7ac-bbe7-418b-aa7c-a8ebbb1319b8@mhtml.blink
+
+@charset "utf-8";
+
+body { background-color: rgb(200, 36, 110); }
+
+.main1 { width: 50%; background-color: rgb(231, 225, 218); margin-left: 25%=
+; margin-top: 200px; display: flex; flex-direction: column; align-items: ce=
+nter; font-size: x-large; border-radius: 30px; }
+
+.main1 input { width: 300px; height: 40px; border-radius: 30px; }
+
+.main1 td { padding-bottom: 10px; }
+
+.main1 button { width: 150px; height: 40px; font-size: large; }
+------MultipartBoundary--aAksUu79zEfg0ALTnKjE6STlCUcrNwZ6I3clQGrOz0------
